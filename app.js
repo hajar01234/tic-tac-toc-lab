@@ -4,7 +4,7 @@ const winningCombos = [ [0, 1,2 ], [3,4,5], [6,7,8],[0,3,6],[1, 4, 7],[2, 5, 8],
 
 /*---------------------------- Variables (state) ----------------------------*/
 let board = ['', '', '', '', '', '', '', '', ''];
-let currentPlayer ='X';
+let currentPlayer = '🧁';
 let winner = false;
 let tie = false;
 
@@ -17,7 +17,7 @@ const resetBtnEl = document.querySelector('#reset');
 /*-------------------------------- Functions --------------------------------*/
 function init() {
   board = ['', '', '', '', '', '', '', '', ''];
-  currentPlayer = 'X';
+  currentPlayer = '🧁';
   winner = false;
   tie = false;
   render();
@@ -100,10 +100,10 @@ function switchPlayerTurn() {
     return;
   }
 
-  if (currentPlayer === 'X') {
-    currentPlayer = 'O';
+  if (currentPlayer === '🧁') {
+    currentPlayer = '🍭';
   } else {
-    currentPlayer = 'X';
+    currentPlayer = '🧁';
   }
 }
 
